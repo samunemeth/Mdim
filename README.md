@@ -1,1 +1,1 @@
-# Mdim
+# Mdim library
