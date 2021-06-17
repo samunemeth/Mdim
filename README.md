@@ -16,6 +16,7 @@ This library is made for multidimensional arrays in JavaScript. It is fully [ES6
 
 ---
 
+
 <a name="make2DArray"></a>
 
 ### `make2DArray(x, y)`
@@ -32,6 +33,7 @@ console.log(grid); // this should log something like: [[10 x empty], [10 x empty
 
 ---
 
+
 <a name="makeArray"></a>
 
 ### `makeArray(dim)`
@@ -45,6 +47,8 @@ let grid = make2DArray([10, 3, 5]); // make grid a 10 by 3 by 5 array
 console.log(grid); // this should log something like: [[[5 x empty], [5 x empty] ...] ...]
 ```
 
+
+---
 
 <br/><br/>
 
@@ -70,12 +74,14 @@ console.log(grid); // this should log something like: [[[5 x empty], [5 x empty]
 
 ---
 
+
 <a name="copyArray"></a>
 
 ### ~~`copyArray()`~~
 
 
 ---
+
 
 <a name="forEachM"></a>
 
@@ -95,6 +101,7 @@ grid.forEachM((elem, pos) => {
 
 
 ---
+
 
 <a name="fillM"></a>
 
@@ -119,6 +126,7 @@ console.log(grid); // this should log something like: [[{x: 0, y: 0, old: 3}, ..
 
 ---
 
+
 <a name="dim"></a>
 
 ### `dim()`
@@ -133,5 +141,7 @@ let grid = make2DArray(10, 5); // make grid a 10 by 5 array
 console.log(grid.dim()); // should log: [10, 5]
 ```
 
+
+---
 
 <br/><br/>
