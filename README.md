@@ -2,7 +2,19 @@
 
 This library is made for multidimensional arrays in JavaScript. It is fully [ES6](https://www.w3schools.com/js/js_es6.asp) compatible. The minified version (the one with the extension *.min.js*) includes all the functions from the original library, it just removes the comments an the readability.
 
-<br/><br/>
+<br/>
+
+
+
+
+# Importing the library:
+
+You can either:
+
+- Use the *cdn* version from: https://mdim.samunemeth.hu/mdim.min.js
+- Download the files from here.
+
+<br/>
 
 
 
@@ -50,7 +62,7 @@ console.log(grid); // this should log something like: [[[5 x empty], [5 x empty]
 
 ---
 
-<br/><br/>
+<br/>
 
 
 
@@ -144,7 +156,7 @@ console.log(grid.dim()); // should log: [10, 5]
 
 ---
 
-<br/><br/>
+<br/>
 
 
 
