@@ -1,17 +1,81 @@
 # JavaScript Mdim library
+
 This library is made for multidimensional arrays in JavaScript. It is fully [ES6](https://www.w3schools.com/js/js_es6.asp) compatible. The minified version (the one with the extension *.min.js*) includes all the functions from the original library, it just removes the comments an the readability.
 
-## Standalone functions:
-- `make2DArray()`
-- `makeArray()`
+<br/>
 
-## Array operations:
-- ~~`removeElement()`~~
-- ~~`copyArr()`~~
+
+
+
+# Standalone functions:
+
+- [`make2DArray()`](#make2DArray)
+- [`makeArray()`](#makeArray)
+
+
+
+---
+
+<a name="make2DArray"></a>
+
+### `make2DArray(x, y)`
+
+This function creates a 2 dimensional array.
+
+**Example:**
+
+```javascript
+let grid = make2DArray(10, 10); // make grid a 10 by 10 array
+console.log(grid); // this should log something like: [[10 x empty], [10 x empty], ...]
+```
+
+
+---
+
+<a name="makeArray"></a>
+
+### `makeArray(dim)`
+
+This function creates an n dimensional array from an array that contains dimensions.
+
+**Example:**
+
+```javascript
+let grid = make2DArray([10, 3, 5]); // make grid a 10 by 3 by 5 array
+console.log(grid); // this should log something like: [[[5 x empty], [5 x empty] ...] ...]
+```
+
+
+<br/><br/>
+
+
+
+
+# Array operations:
+
+- [~~`removeElement()`~~](#removeElement)
+- [~~`copyArray()`~~](#copyArray)
 - [`forEachM()`](#forEachM)
 - [`fillM()`](#fillM)
 - [`dim()`](#dim)
 
+
+
+---
+
+<a name="removeElement"></a>
+
+### ~~`removeElement()`~~
+
+
+---
+
+<a name="copyArray"></a>
+
+### ~~`copyArray()`~~
+
+
+---
 
 <a name="forEachM"></a>
 
@@ -27,9 +91,10 @@ let grid = make2DArray(10, 10); // make grid a 10 by 10 array
 grid.forEachM((elem, pos) => {
     console.log(elem, ' at position ', pos); // logs every element and it's position to the console
 });
-
 ```
 
+
+---
 
 <a name="fillM"></a>
 
@@ -49,9 +114,10 @@ grid.fillM((pos, elem) => {
     return {x: pos[0], y: pos[1], old: elem}; // fill the grid with object that contain the objects position and the old value (in this case: 3)
 });
 console.log(grid); // this should log something like: [[{x: 0, y: 0, old: 3}, ...] ...]
-
 ```
 
+
+---
 
 <a name="dim"></a>
 
@@ -65,5 +131,7 @@ The dim method returns the dimensions of the array.
 let grid = make2DArray(10, 5); // make grid a 10 by 5 array
 
 console.log(grid.dim()); // should log: [10, 5]
-
 ```
+
+
+<br/><br/>
