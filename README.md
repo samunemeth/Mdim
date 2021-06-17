@@ -2,7 +2,7 @@
 
 This library is made for multidimensional arrays in JavaScript. It is fully [ES6](https://www.w3schools.com/js/js_es6.asp) compatible. The minified version (the one with the extension *.min.js*) includes all the functions from the original library, it just removes the comments an the readability.
 
-<br/>
+<br/><br/>
 
 
 
@@ -145,3 +145,14 @@ console.log(grid.dim()); // should log: [10, 5]
 ---
 
 <br/><br/>
+
+
+
+
+# To-do:
+
+- [x] Add description to all functions.
+- [ ] Rework [`copyArray()`](#copyArray).
+- [ ] Rework [`removeElement()`](#removeElement).
+- [ ] Add `rotate()`.
+- [ ] Add example projects
