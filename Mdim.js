@@ -8,7 +8,7 @@
 */
 
 
-/* --- 1.0 Multi dimensional arrays --- */
+/* --- 1.0 Standalone functions --- */
 
 
 /*
@@ -148,4 +148,18 @@ Array.prototype.fillM = function (f, from = []) {
 
         this[i].fillM(f, pos);
     }
+}
+
+/*
+    2.5 Dimensions of multidimensional array
+    for getting the dimensions of a multidimensional array
+*/
+
+Array.prototype.dim = function (prev = []) {
+
+    prev.push(this.length);
+    if (this[0] && this[0].constructor == Array) {
+        return this[0].dim(prev);
+    }
+    return prev;
 }
