@@ -77,23 +77,23 @@ function makeArrayHelp(arr, dim) {
     2.1 Remove element
 */
 
-function removeElement(arr, elem) {
-    for (var i = arr.length - 1; i >= 0; i--) {
-        if (arr[i] == elem) {
-            arr.splice(i, 1);
-        }
-    }
-    return arr;
-};
+// function removeElement(arr, elem) {
+//     for (var i = arr.length - 1; i >= 0; i--) {
+//         if (arr[i] == elem) {
+//             arr.splice(i, 1);
+//         }
+//     }
+//     return arr;
+// };
 
 /*
     2.2 Copy array
     copies an array with the spread operator
 */
 
-function copyArray(arr) {
-    return [...arr];
-}
+// function copyArray(arr) {
+//     return [...arr];
+// }
 
 /*
     2.3 Multidimensional forEach 
