@@ -91,7 +91,7 @@ function removeElement(arr, elem) {
     copies an array with the spread operator
 */
 
-function copyArr(arr) {
+function copyArray(arr) {
     return [...arr];
 }
 
