@@ -24,7 +24,7 @@ function make2DArray(x, y) {
         arr[i] = new Array(y);
     };
     return (arr);
-};
+}
 
 /*
     1.2 Multi dimensional array creator
@@ -128,7 +128,7 @@ Array.prototype.fillM = function (f, from = []) {
 
     if (!this.length) return;
     const evaluate = !this[0] || this[0].constructor != Array;
-    const static = f && f.constructor != Function;
+    const func = f && f.constructor == Function;
 
     for (let i = 0; i < this.length; i++) {
 
@@ -137,12 +137,12 @@ Array.prototype.fillM = function (f, from = []) {
 
         if (evaluate) {
 
-            if (static) {
-                this[i] = f;
+            if (func) {
+                this[i] = f(pos, this[i]);
                 continue;
             }
-
-            this[i] = f(pos, this[i]);
+            
+            this[i] = f;
             continue;
         }
 
