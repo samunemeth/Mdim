@@ -1,5 +1,5 @@
 # JavaScript Mdim library
-This library is made for multidimensional arrays in Javascript.
+This library is made for multidimensional arrays in JavaScript. It is fully [ES6](https://www.w3schools.com/js/js_es6.asp) compatible. The minified version (the one with the extension *.min.js*) includes all the functions from the original library, it just removes the comments an the readability.
 
 ## Standalone functions:
 - `make2DArray()`
@@ -16,7 +16,7 @@ This library is made for multidimensional arrays in Javascript.
 
 ### forEachM( f(elem, pos) )
 
-This is a multidimensional version of the forEach function. It loops trough all the nested arrays. It takes a function as a parameter, and executes it for every element in the array. It gives the function the current element, and the position of the element.
+This is a multidimensional version of the [`forEach()`](https://www.w3schools.com/jsref/jsref_foreach.asp) function. It loops trough all the nested arrays. It takes a function as a parameter, and executes it for every element in the array. It gives the function the current element, and the position of the element.
 
 Example:
 
