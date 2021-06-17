@@ -13,7 +13,7 @@ This library is made for multidimensional arrays in JavaScript. It is fully [ES6
 - [`dim()`](#dim)
 
 
-<a name="forEachM"/>
+<a name="forEachM"></a>
 
 ### `forEachM( f(elem, pos) )`
 
@@ -31,7 +31,7 @@ grid.forEachM((elem, pos) => {
 ```
 
 
-<a name="fillM"/>
+<a name="fillM"></a>
 
 ### `fillM( val )` or `fillM( f(pos, elem) )`
 
@@ -53,7 +53,7 @@ console.log(grid); // this should log something like: [[{x: 0, y: 0, old: 3}, ..
 ```
 
 
-<a name="dim"/>
+<a name="dim"></a>
 
 ### `dim()`
 
