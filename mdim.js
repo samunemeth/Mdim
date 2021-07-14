@@ -19,7 +19,7 @@
 function make2DArray(x, y) {
 
     arr = new Array(x);
-    
+
     for (let i = 0; i < arr.length; i++) {
         arr[i] = new Array(y);
     };
@@ -141,7 +141,7 @@ Array.prototype.fillM = function (f, from = []) {
                 this[i] = f(pos, this[i]);
                 continue;
             }
-            
+
             this[i] = f;
             continue;
         }
@@ -163,3 +163,50 @@ Array.prototype.dim = function (prev = []) {
     }
     return prev;
 }
+
+/*
+    2.6 Last element of an array
+    for getting the last element of an array
+*/
+
+Object.defineProperty(Array.prototype, 'last', {
+    get: function() {
+        return this[this.length - 1];
+    }
+});
+
+// Array.prototype.last = function () {
+//     return this[this.length - 1];
+// }
+
+/*
+    2.6 Last element of a multidimensional array
+    for getting the last element of a multidimensional array
+*/
+
+Object.defineProperty(Array.prototype, 'lastM', {
+    get: function() {
+
+        const last = this.last;
+
+        if (last && last.constructor == Array) {
+            return last.lastM;
+        }
+    
+        return last;
+    }
+});
+
+// Array.prototype.lastM = function () {
+
+//     const last = this.last();
+
+//     if (last && last.constructor == Array) {
+//         return last.lastM();
+//     }
+
+//     return last;
+// }
+
+let res = [1, 2, 3, [4, 2]].lastM;
+res
