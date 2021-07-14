@@ -207,6 +207,3 @@ Object.defineProperty(Array.prototype, 'lastM', {
 
 //     return last;
 // }
-
-let res = [1, 2, 3, [4, 2]].lastM;
-res
