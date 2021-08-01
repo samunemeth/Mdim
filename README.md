@@ -178,7 +178,7 @@ console.log(grid.dim()); // should log: [10, 5]
 # To-do:
 
 - [x] Add description to all functions.
-- [ ] Rework [`copyArray()`](#copyArray).
+- [x] Rework [`copy()`](#copy).
 - [ ] Rework [`removeElement()`](#removeElement).
 - [ ] Add `rotate()`.
 - [ ] Add example projects
