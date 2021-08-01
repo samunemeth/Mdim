@@ -87,13 +87,27 @@ function makeArrayHelp(arr, dim) {
 // };
 
 /*
-    2.2 Copy array
-    copies an array with the spread operator
+    2.2 Copy multidimensional array
+    copies a multidimensional array with the spread operator
 */
 
-// function copyArray(arr) {
-//     return [...arr];
-// }
+Array.prototype.copy = function () {
+
+    if (!this.length) return [];
+
+    if (this[0] && this[0].constructor == Array) {
+
+        let arr = [];
+
+        for (let i = 0; i < this.length; i++) {
+            arr.push(this[i].copy());
+        }
+
+        return arr;
+    }
+
+    return [...this];
+}
 
 /*
     2.3 Multidimensional forEach 
