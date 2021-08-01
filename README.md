@@ -1,10 +1,3 @@
-<style>
-    body {
-        scroll-padding-top: 20px;
-    }
-</style>
-
-
 # JavaScript Mdim library
 
 This library is made for multidimensional arrays in JavaScript. It is fully [ES6](https://www.w3schools.com/js/js_es6.asp) compatible. The minified version (the one with the extension *.min.js*) includes all the functions from the original library, it just removes the comments an the readability.
