@@ -74,17 +74,8 @@ function makeArrayHelp(arr, dim) {
 
 
 /*
-    2.1 Remove element
+    2.1 Remove element (removed)
 */
-
-// function removeElement(arr, elem) {
-//     for (var i = arr.length - 1; i >= 0; i--) {
-//         if (arr[i] == elem) {
-//             arr.splice(i, 1);
-//         }
-//     }
-//     return arr;
-// };
 
 /*
     2.2 Copy multidimensional array
