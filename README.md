@@ -70,7 +70,7 @@ console.log(grid); // this should log something like: [[[5 x empty], [5 x empty]
 # Array operations:
 
 - [~~`removeElement()`~~](#removeElement)
-- [~~`copyArray()`~~](#copyArray)
+- [`copy()`](#copy)
 - [`forEachM()`](#forEachM)
 - [`fillM()`](#fillM)
 - [`dim()`](#dim)
@@ -87,9 +87,23 @@ console.log(grid); // this should log something like: [[[5 x empty], [5 x empty]
 ---
 
 
-<a name="copyArray"></a>
+<a name="copy"></a>
 
-### ~~`copyArray()`~~
+### `copy()`
+
+This function copies an array using the spread operator. It also works on multidimensional arrays.
+
+**Example:**
+
+```javascript
+let a = [0, 1, 2]; // make an array
+let b = a.copy(); // copy the array
+
+a[0] = 4; // change an element in the original array
+
+console.log(a); // this should log something like: [4, 1, 2]
+console.log(b); // this should log something like: [0, 1, 2]
+```
 
 
 ---
