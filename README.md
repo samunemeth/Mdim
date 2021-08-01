@@ -69,19 +69,11 @@ console.log(grid); // this should log something like: [[[5 x empty], [5 x empty]
 
 # Array operations:
 
-- [~~`removeElement()`~~](#removeElement)
 - [`copy()`](#copy)
 - [`forEachM()`](#forEachM)
 - [`fillM()`](#fillM)
 - [`dim()`](#dim)
 
-
-
----
-
-<a name="removeElement"></a>
-
-### ~~`removeElement()`~~
 
 
 ---
@@ -157,7 +149,7 @@ console.log(grid); // this should log something like: [[{x: 0, y: 0, old: 3}, ..
 
 ### `dim()`
 
-The dim method returns the dimensions of the array.
+The `dim()` method returns the dimensions of a multidimensional array.
 
 **Example:**
 
@@ -179,6 +171,6 @@ console.log(grid.dim()); // should log: [10, 5]
 
 - [x] Add description to all functions.
 - [x] Rework [`copy()`](#copy).
-- [ ] Rework [`removeElement()`](#removeElement).
+- [x] Remove [`removeElement()`](#removeElement).
 - [ ] Add `rotate()`.
 - [ ] Add example projects
