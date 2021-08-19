@@ -11,7 +11,7 @@ This library is made for multidimensional arrays in JavaScript. It is fully [ES6
 
 You can either:
 
-- Use the *cdn* version from: https://mdim.samunemeth.hu/mdim.min.js
+- Use the *cdn* version from: https://samunemeth.github.io/mdim/mdim.min.js
 - Download the files from here.
 
 <br/>
